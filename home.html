@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/spa.png" type="image/x-icon">
+    <title>Equivid Academia de Salud y Belleza</title>
+    <link rel="stylesheet" href="/css/style.css">
+   
+</head>
+<body>
+    <header>
+        <div class="container">
+                      <h1>Equivid Academia de Salud y Belleza</h1>
+        </div>
+        <div class="gallery">
+            <img src="img/logo.jpg" alt="Masaje de espalda">
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="course">
+            <h2>Curso Intensivo: Masaje de Relajación Espalda + Piedras Calientes</h2>
+            <div class="course-details">
+
+                <div class="course-info">
+                    <p><strong>Fecha:</strong> 3 y 4 de Agosto</p>
+                    <p><strong>Incluye:</strong></p>
+                    <ul>
+                        <li>Manual</li>
+                        <li>Insumos</li>
+                        <li>Certificado</li>
+                        <li>Coffee Break</li>
+                    </ul>
+                    <p><strong>Ubicación:</strong> Pob. Roberto Huerta, Santa María</p>
+                    <p><strong>Contacto:</strong> +56985967655 / +56988783590</p>
+                </div>
+                <div class="course-content">
+                    <div class="gallery">
+                        <img src="img/Piedras_Calientes.jpg" alt="Masaje de espalda">
+                        <img src="img/espalda.jpg" alt="Piedras calientes">
+                        <img src="img/espalda.jpg" alt="Masaje relajante">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Reservar Cupo</a>
+        </section>
+
+        <section class="course">
+            <h2>Curso de Pestañas: Lifting</h2>
+            <div class="course-details">
+                <div class="course-info">
+                    <p><strong>Instructor:</strong> Karol Garcia</p>
+                    <p><strong>Valor del curso:</strong> $100,000</p>
+                    <p><strong>Reservas:</strong> 50% del valor total</p>
+                    <p><strong>Fecha:</strong> Jueves 15 de Agosto</p>
+                    <p><strong>Horario:</strong> 10:00 - 13:00 y 14:00 - 17:00</p>
+                    <p><strong>Duración:</strong> 6 Horas</p>
+                </div>
+                <div class="course-content">
+                    <h3>Contenido del curso:</h3>
+                    <ul id="course-content-list"></ul>
+                </div>
+            </div>
+            <p><strong>Incluye:</strong> Manual, Insumos, Certificado, Coffee Break, Práctica, Asesoramiento y Seguimiento</p>
+            <a href="#" class="btn">Reservar Cupo</a>
+        </section>
+    </div>
+
+    <script>
+        const courseContent = [
+            'Anatomía del ojo',
+            'Estructura de la pestaña',
+            'Ciclo de vida de la pestaña',
+            'Contraindicaciones',
+            'Bigudíes y curvaturas',
+            'Químicos utilizados',
+            'Tipos de tintes',
+            'Diagnóstico de las pestañas',
+            'Higiene para un mejor servicio',
+            'Paso a paso del Lifting de pestañas',
+            'Tips para mejorar el servicio y resultados',
+            'Recomendaciones para el cuidado post servicio'
+        ];
+
+        const courseContentList = document.getElementById('course-content-list');
+        courseContent.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item;
+            courseContentList.appendChild(li);
+        });
+    </script>
+</body>
+</html>
